@@ -1,0 +1,7 @@
+{
+  "name": "bawq-mobileApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

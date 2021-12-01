@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "bawq-mobileApp",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
