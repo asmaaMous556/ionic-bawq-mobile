@@ -2,7 +2,7 @@
 /* eslint-disable no-trailing-spaces */
 import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
-import { DevicesService } from 'src/app/devices/devices.service';
+import { DevicesService } from 'src/app/home/devices/devices.service';
 
 @Component({
   selector: 'app-side-menu',

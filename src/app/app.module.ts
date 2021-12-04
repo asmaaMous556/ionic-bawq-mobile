@@ -12,15 +12,20 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { InMemoryCache } from '@apollo/client/core';
 import { HttpClientModule } from '@angular/common/http';
+import { ControlTabsComponent } from './home/control-tabs/control-tabs.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,ControlTabsComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
     HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey:'AIzaSyC9lrOK9-8S6tZYL64oH4JrrXEPvjPHx4k'
+    })
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
