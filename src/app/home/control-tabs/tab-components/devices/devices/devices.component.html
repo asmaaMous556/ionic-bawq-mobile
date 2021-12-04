@@ -13,54 +13,14 @@
     <ion-content>
        <ion-list>
 
-        <ion-item>
-          <ion-icon style="color:green" name="radio-button-on-outline"></ion-icon>
+        <ion-item *ngFor="let device of devices">
+          <ion-icon [style.color]=" (device.status==='moving')? 'green ' : 
+           (device.status==='idling')? 'yellow'  : (device.status==='parking'? 'red' : null) " name="car-outline"></ion-icon>
           <ion-label>
-            Amr's
+            {{device.name}}
           </ion-label>
-          
             <ion-icon name="chevron-forward-outline"></ion-icon>
-    
         </ion-item>
-        <ion-item>
-          <ion-icon style="color:green" name="radio-button-on-outline"></ion-icon>
-          <ion-label>
-            Salma's
-          </ion-label>
-          <ion-icon name="chevron-forward-outline"></ion-icon>
-        </ion-item>
-       <ion-item>
-        <ion-icon style="color:red" name="radio-button-on-outline"></ion-icon>
-        <ion-label>
-          Nasser's
-        </ion-label>
-        <ion-icon name="chevron-forward-outline"></ion-icon>
-       </ion-item>
-
-
-        <ion-item>
-          <ion-icon style="color:red" name="radio-button-on-outline"></ion-icon>
-        <ion-label>
-          Nasser's
-        </ion-label>
-        <ion-icon name="chevron-forward-outline"></ion-icon>
-        </ion-item>
-        <ion-item>
-          <ion-icon style="color:yellow" name="radio-button-on-outline"></ion-icon>
-        <ion-label>
-          Test
-        </ion-label>
-        <ion-icon name="chevron-forward-outline"></ion-icon>
-         
-        </ion-item>
-        <ion-item>
-          <ion-icon style="color:red" name="radio-button-on-outline"></ion-icon>
-        <ion-label>
-          Test
-        </ion-label>
-        <ion-icon name="chevron-forward-outline"></ion-icon>
-      </ion-item>
-
        </ion-list>
           
     
